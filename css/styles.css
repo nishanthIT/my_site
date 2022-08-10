@@ -1,9 +1,61 @@
 body{
   color: #40514E;
   margin: 0;
+
   text-align: center;
   font-family: 'Merriweather', serif;
+
 }
+*{
+  scroll-behavior: smooth;
+}
+nav{
+position: fixed;
+top:0;
+left: 0;
+z-index: 1;
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: space-between;
+/* margin-left: 100px; */
+background:#e0ebe8;
+transition: top 0.4s
+}
+.brand{
+width: 6%;
+padding-top: 10px;
+padding-left: 10%;
+padding-right: 10%;
+/* padding-bottom: 10px; */
+}
+nav ul li{
+  list-style-type: none;
+  display: inline-block;
+
+  padding: 10px 20px;
+}
+
+nav ul li.active a,
+nav ul li:hover a{
+  color:	 #26734d;
+}
+.links{
+margin-right: 80px;
+}
+
+/* .navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+}
+.navbar-nav  li a:hover {
+    color: #1abc9c !important;
+  }  */
 h1{
   margin: 50px,auto,0,auto;
   margin-bottom: -1%;
@@ -56,7 +108,7 @@ a:hover{
 .top_container{
   background-color: #e0ebe8;
   position: relative;
-  padding-top: 100px;
+  padding-top: 70px;
 }
 
 .middle-container{
@@ -86,6 +138,10 @@ margin: 100px 0px;
 .bottom-container{
   background-color: #c5ded7;
   padding: 50px 0 20px;
+ }
+ .footer-link{
+   font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
  }
 .top_cloud{
   position: absolute;
@@ -142,9 +198,57 @@ margin: 100px 0px;
 }
 .copy-right{
   color: #49b39a;
-  font-size: 0.45rem;
+  font-size: 0.8rem;
   padding: 20px 0;
 }
 .my-ico{
   width: 15%;
+}
+ @media (max-width: 1028px) {
+
+body{
+  margin-right: -100px;
+  margin-left: -100px;
+}
+p{
+  font-size: 17.5px;
+}
+skill-row p {
+ font-size: 18px;
+ }
+
+h1{
+  font-size: 600%;
+}
+#a_web_developer{
+  font-size: 30px;
+}
+.mountain{
+  width: 65%;
+  margin-top:-5%;
+}
+
+
+
+
+   /* body{
+     margin: 0 -100px;
+   }
+
+
+
+
+   .top_container{
+     background-color: #e0ebe8;
+     position: relative;
+     padding-top: 70px;
+     margin: 0 -100px;
+   }
+   .middle-container{
+   margin: 100px -150px;
+   }
+
+    .contact-me p{
+    font-size: 17.25px;
+    }*/
 }
